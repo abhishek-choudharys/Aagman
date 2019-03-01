@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
+  <link rel="stylesheet" href="{% static 'accounts/css/presignupccs.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Righteous" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+  <div id="large-header" class="large-header">
+  <canvas id="demo-canvas"></canvas>
+    <h1 class="main-title" style="font-family: Righteous;font-size: 100px; ">AAGMAN</h1>
+
+    <div id="buttons" >
+      <a href="{% url 'customersignup' %}"><button type="button"  class="btn btn-success ">Customer</button></a>
+
+      <a href="{% url 'startupsignup' %}"><button type="button"  class="btn btn-success ">Startup</button></a>
+</div>
+
+
+
+</div>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+<script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+<script src="{% static 'accounts/js/presignupjs.js' %}"></script>
+
+
+
+
+</body>
+</html>
